@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    background: #e5e772;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 100%;
+    
+}
+
+.logoAlura{
+    padding-top: 10px;
+    margin-left: 40px;
+    width: 2%;
+    background-color: none;
+
+}
+main{
+    width: 85%;
+    margin: auto 4px auto auto;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    min-height: calc(100vh - 91px - 72px);
+}
+
+.text-area {
+    border: none;
+    color: #495057;
+    margin-top: 90px;
+    text-transform: lowercase;
+    height: 350px;
+    width: 90%;
+    font-size: 32px;
+    resize: none;
+    
+}
+
+.mensaje-advertencia{
+    display: flex;
+    align-items: center;
+}
+
+.logoWarning{
+    height: 20px;
+}
+.informacion{
+    color: #495057;
+    font-size: 10px;
+    margin-left: 10px;
+    text-align: justify;
+}
+::placeholder {
+    color: #0a3871;
+}
+.text-area:focus{
+    outline: 20px;
+}
+
+#outputText.no-imagen {
+    background-image: none;
+}
+.botones{
+    display:flex;
+    margin-top: 15px;
+    gap: 30px;
+
+}
+.btn-encriptar{
+    background-color: #2b68e1;
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    height: 67px;
+    max-width: 328px;
+    width: 40%;
+    font-size: 16px;
+}
+.btn-desencriptar{
+    background: #d9dfe8;
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    color: #0a3871;
+    cursor: pointer;
+    height: 67px;
+    max-width: 328px;
+    width: 40%;
+    font-size: 16px;
+}
+
+.btn-desencriptar:hover{
+    background-image: url("/img/redfutbol.png");
+
+}
+.textoGenerado{
+    justify-items: center;
+}
+.mensaje{
+    outline: none;
+    height: 600px;
+    width: 23%;
+    background-image: url("/img/muneco.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #2b68e1;
+    border: none;
+    font-weight: bold;
+    border-radius: 24px;
+    color: #F3F5FC;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    padding-left: 20px;
+    position: fixed;
+    text-align: center;
+    box-shadow: 1px 15px 15px rgb(167, 175, 1);
+    resize: none;
+    align-items: center;
+}
+.mensaje:focus {
+    outline: none;
+}
+
+.btn-copiar{
+    background: #e5e772;
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    color: #0a3871;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 3%;
+    margin-top: 510px;
+    position:relative;
+    max-width: 328px;
+    width: 70%;
+    font-size: 16px;
+}
+
+.ocultar{
+    display: none;
+}
+
+.footer{
+    display: flex;
+    color: #0a3871;
+    padding: 24px;
+    text-align: center;
+    font-size: 0.5rem;
+    font-weight: 400;
+    margin-top: 2px;
+    align-items: center;
+    margin-left: 40%;
+        
+}
+.banderaColombia{
+    height: 20px;
+    background-color: none;
+
+}
+
+@media screen and (max-width: 770px){
+    main{
+        grid-template-columns: 1fr;
+        grid-template-rows: 75% auto;
+        width: auto;
+        margin: auto 40px;        
+    }
+    .logoAlura{
+        width: 5%;
+    }
+    .text-area{
+        margin-top: auto;
+        width: 100%;
+        height: auto;
+        left: 10%;
+        right: 10%; 
+    }
+    .informacion{
+        font-size: 16px;
+    }
+    .botones{
+        justify-content: center;
+        border-radius: 16px;
+    }
+    .btn-encriptar, .btn-desencriptar{
+        width: 50%;
+    }
+    .mensaje{
+        width: 85%;
+        height: 30%;
+        left: 5%;
+        background-image: none;
+    }
+
+    .btn-copiar{
+        width: 300%;
+        position: relative;
+        margin-top: 110px;
+        justify-content: center;
+    }
+    .footer{
+        margin-left: 30%;
+        margin-top: 20%;
+    
+    }
+}
+
+@media screen and (max-width: 375px){
+    main{
+       margin: auto;
+    }
+    .logoAlura{
+        width: 7%;
+        
+    }
+    .text-area {
+        width: 100%;
+        height: 100px;
+        font-size: 21px;
+    }
+    .informacion{
+        font-size: 9px;        
+    }  
+    .botones{
+        flex-direction: column;
+        justify-items: center;
+    }
+    .btn-encriptar, .btn-desencriptar{
+        max-width: none;
+        width: 100%;
+    }
+    .mensaje{
+        width: 85%;
+        height: 20%;
+    }
+    .btn-copiar{
+        width: 150%;
+        margin-top: 25%;
+        position: relative;
+    }
+    
+}

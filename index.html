@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Encriptador</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div>
+            <img class="logoAlura" src="/img/logoalura.png" alt="Logo de alura">
+        </div>        
+    </header>
+    <main>
+        <div class="main">
+            <div class="insertarTexto">
+                <textarea class="text-area" id="inputText" placeholder= "Ingresa el texto aquí"></textarea><br><br>
+                <div class="mensaje-advertencia">
+                    <img class="logoWarning" src="/img/warning.png" alt="Logo de advertencia">
+                    <p class="informacion">Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div class="botones">
+                    <button class="btn-encriptar" onclick="encodeText()">Encriptar</button>
+                    <button class="btn-desencriptar" onclick="decodeText()">Desencriptar</button><br>
+                </div>          
+            </div>
+        </div>
+        
+        <div class="textoGenerado">
+            <textarea class="mensaje" id="outputText" placeholder="¡Ningún mensaje fue encontrado!"></textarea>            
+            <div>
+                <button id="botonCopiar" class="btn-copiar ocultar" onclick="copyText()">Copiar</button>
+            </div>              
+        </div>   
+    
+    </main>
+    <footer class="footer">
+        Desarrollado por Rodrigo Marín
+        <div>
+            <img class="banderaColombia" src="/img/banderacolombia.png" alt="Bandera de Colombia">
+
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
