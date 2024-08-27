@@ -90,7 +90,7 @@ main{
 }
 
 .btn-desencriptar:hover{
-    background-image: url("/img/redfutbol.png");
+    background-image: url("./img/redfutbol.png");
 
 }
 .textoGenerado{
@@ -100,7 +100,7 @@ main{
     outline: none;
     height: 600px;
     width: 23%;
-    background-image: url("/img/muneco.png");
+    background-image: url("./img/muneco.png");
     background-repeat: no-repeat;
     background-position: center;
     background-color: #2b68e1;
